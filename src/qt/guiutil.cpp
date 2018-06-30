@@ -145,7 +145,7 @@ bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
     //    which will lower-case it (and thus invalidate the address).
     if(uri.startsWith("bitmxittz://"))
     {
-        uri.replace(0, 11, "bitmxittz:");
+        uri.replace(0, 12, "bitmxittz:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
