@@ -1,7 +1,7 @@
 Bitmxittz integration/staging tree
 ================================
 
-http://www.bitmxittz.org
+https://www.bitmxittz.com
 
 Copyright (c) 2009-2014 Bitcoin Developers
 Copyright (c) 2011-2014 Litecoin Developers
@@ -20,13 +20,13 @@ The rest is the same as Bitcoin.
  - 10 blocks to retarget difficulty
 
 For more information, as well as an immediately useable, binary version of
-the Bitmxittz client sofware, see http://www.bitmxittz.org.
+the Bitmxittz client sofware, see https://www.bitmxittz.com or http://www.bitmxittz.com.
 
 License
 -------
 
 Bitmxittz is released under the terms of the MIT license. See `COPYING` for more
-information or see http://opensource.org/licenses/MIT.
+information https://bitmxittz.mit-license.org/ or see http://opensource.org/licenses/MIT.
 
 Development process
 -------------------
