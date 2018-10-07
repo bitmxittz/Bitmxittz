@@ -74,4 +74,17 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
 
 Compilation
--------
+-----------
+
+Compile Bitmxittz QT wallet or Daemon on windows, linux
+
+### Compile Daemon on Linux
+
+
+### Compile QT wallet on Linux
+
+
+### Compile Daemon on Windows
+
+
+### Compile QT wallet on Windows
