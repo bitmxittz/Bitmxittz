@@ -86,20 +86,27 @@ Compile Bitmxittz QT wallet or Daemon on windows, linux
 
 use "sudo" before command line if you are not root user
 
-command line 1
+command line:
+
     apt-get update
 
-command line 2
+command line:
 
     apt-get upgrade
 
 If low on RAM
 
+command line:
+
     dd if=/dev/zero of=/swapfile bs=1024 count=1024288
+
+command line:
 
     nano /etc/fstab
     
 Or use vim
+
+command line:
 
     vim /etc/fstab
 
@@ -109,41 +116,78 @@ To edit, press "Insert" if you using vim
 
 To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" hit "Enter"
 
+command line:
+
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
+
+command line:
 
     git clone https://github.com/bitmxittz/Bitmxittz
 
+command line:
+
     cd Bitmxittz/src/leveldb
+
+command line:
 
     chmod 0755 build_detect_platform
 
+command line:
+
     make clean
+
+command line:
 
     make libleveldb.a libmemenv.a
 
+command line:
+
     cd
+
+command line:
 
     cd Bitmxittz/src
 
+command line:
+
     make -f makefile.unix clean
+
+command line:
 
     make STATIC=1 -f makefile.unix bitmxittzd  
 
 -or-  
 
+
+command line:
+
     make -f makefile.unix bitmxittzd
+
+command line:
 
     strip bitmxittzd
 
+command line:
+
     cp bitmxittzd /usr/bin
 
+command line:
+
     bitmxittzd & cd ~/.bitmxittz
+
+command line:
 
     nano bitmxittz.conf 
 
 or 
 
+command line:
+
     vim bitmxittz.conf
+
+Edit following lines, change YOUR_RPC_USERNAME and YOUR_STRONG_PASSWORD with your own
+
+command line:
 
     rpcuser=YOUR_RPC_USERNAME
     rpcpassword=YOUR_STRONG_PASSWORD
@@ -165,11 +209,19 @@ or
 
 if using nano cntr+O then cntl+x, if using vim Esc :wq Enter, to save and exit.
 
+command line:
+
     cd
+
+command line:
 
     bitmxittzd
 
+command line:
+
     bitmxittzd getinfo
+
+command line:
 
     bitmxittzd getpeerinfo
 
