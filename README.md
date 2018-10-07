@@ -84,7 +84,7 @@ Compile Bitmxittz QT wallet or Daemon on windows, linux
 
 ### Compile Daemon on Linux
 
-use "sudo" if you are not root user.
+use "sudo" if you are not root user
 
     apt-get update
 
@@ -93,7 +93,6 @@ use "sudo" if you are not root user.
 If low on RAM
 
     dd if=/dev/zero of=/swapfile bs=1024 count=1024288
-
 
     nano /etc/fstab
     
