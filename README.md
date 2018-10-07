@@ -83,6 +83,97 @@ Compilation
 Compile Bitmxittz QT wallet or Daemon on windows, linux
 
 ### Compile Daemon on Linux
+use "sudo" if you are not root user.
+
+apt-get update
+
+apt-get upgrade
+
+dd if=/dev/zero of=/swapfile bs=1024 count=1024288
+
+nano /etc/fstab
+
+Add this at the bottom of nano /etc/fstab: /swapfile none swap sw 0 0
+
+apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
+
+git clone https://github.com/bitmxittz/Bitmxittz
+
+cd Bitmxittz/src/leveldb
+
+chmod 0755 build_detect_platform
+
+make clean
+
+make libleveldb.a libmemenv.a
+
+cd
+
+cd Bitmxittz/src
+
+make -f makefile.unix clean
+
+make STATIC=1 -f makefile.unix bitmxittzd  
+
+-or-  
+
+make -f makefile.unix bitmxittzd
+
+strip bitmxittzd
+
+cp bitmxittzd /usr/bin
+
+bitmxittzd & cd ~/.bitmxittz
+
+nano bitmxittz.conf 
+
+or 
+
+vim bitmxittz.conf
+
+rpcuser=YOUR_RPC_USERNAME
+
+rpcpassword=YOUR_STRONG_PASSWORD
+
+rpcallowip=127.0.0.1
+
+port=14433
+
+rpcport=14432
+
+daemon=1
+
+server=1
+
+listen=1
+
+testnet=0
+
+txindex=1
+
+timeout=30000
+
+rpctimeout=30000
+
+addnode=nd1.bitmxittz.com
+
+addnode=nd2.bitmxittz.com
+
+addnode=nd3.bitmxittz.com
+
+addnode=nd4.bitmxittz.com
+
+addnode=nd5.bitmxittz.com
+
+if using nano cntr+O then cntl+x, if using vim Esc :wq Enter.
+
+cd
+
+bitmxittzd
+
+bitmxittzd getinfo
+
+bitmxittzd getpeerinfo
 
 
 ### Compile QT wallet on Linux
