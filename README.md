@@ -95,8 +95,14 @@ If low on RAM
     dd if=/dev/zero of=/swapfile bs=1024 count=1024288
 
     nano /etc/fstab
+Or
+    vim /etc/fstab
 
-Add this at the bottom of nano /etc/fstab: /swapfile none swap sw 0 0
+Add this at the bottom of /etc/fstab: /swapfile none swap sw 0 0
+
+To edit, press "Insert" if you using vim.
+
+To save and exit, if using nano press "cntr+O" then "cntl+x", if using vim press "Esc" type ":wq" hit "Enter".
 
     apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
