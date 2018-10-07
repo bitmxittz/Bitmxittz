@@ -87,7 +87,7 @@ Compile Bitmxittz QT wallet or Daemon on windows, linux
 use "sudo" if you are not root user
 
     apt-get update
-
+.
     apt-get upgrade
 
 If low on RAM
