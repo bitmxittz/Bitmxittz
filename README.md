@@ -83,11 +83,14 @@ Compilation
 Compile Bitmxittz QT wallet or Daemon on windows, linux
 
 ### Compile Daemon on Linux
+
 use "sudo" if you are not root user.
 
-apt-get update
+    apt-get update
 
 apt-get upgrade
+
+If low on RAM
 
 dd if=/dev/zero of=/swapfile bs=1024 count=1024288
 
