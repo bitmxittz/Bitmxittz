@@ -84,10 +84,14 @@ Compile Bitmxittz QT wallet or Daemon on windows, linux
 
 ### Compile Daemon on Linux
 
-use "sudo" if you are not root user
+use "sudo" before command line if you are not root user
+
+command line 1
 
     apt-get update
-.
+
+command line 2
+
     apt-get upgrade
 
 If low on RAM
