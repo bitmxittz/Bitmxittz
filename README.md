@@ -96,7 +96,7 @@ If low on RAM
 
     nano /etc/fstab
     
-Or
+Or use vim
 
     vim /etc/fstab
 
