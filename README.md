@@ -12,10 +12,12 @@ Copyright (c) 2017-2019 Bitmxittz Developers
 What is Bitmxittz?
 ----------------
 
-Bitmxittz is a lite version of Bitcoin using scrypt as a proof-of-work algorithm.
+Bitmxittz is a lite version of Bitcoin using scrypt as a proof -of-work, proof-of-stake 0% algorithm.
  - 15 second block targets
  - subsidy halves in 26-27 blocks
  - ~10000 total coins
+ - last proof-of-work block #27
+ - proof-of-stake 0% interest
 
 The rest is the same as Bitcoin.
  - 1 coins per block
