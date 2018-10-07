@@ -88,95 +88,79 @@ use "sudo" if you are not root user.
 
     apt-get update
 
-apt-get upgrade
+    apt-get upgrade
 
 If low on RAM
 
-dd if=/dev/zero of=/swapfile bs=1024 count=1024288
+    dd if=/dev/zero of=/swapfile bs=1024 count=1024288
 
-nano /etc/fstab
+    nano /etc/fstab
 
 Add this at the bottom of nano /etc/fstab: /swapfile none swap sw 0 0
 
-apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
+    apt-get install ntp unzip git build-essential libssl-dev libdb-dev libdb++-dev libboost-all-dev libqrencode-dev aptitude && aptitude install miniupnpc libminiupnpc-dev
 
-git clone https://github.com/bitmxittz/Bitmxittz
+    git clone https://github.com/bitmxittz/Bitmxittz
 
-cd Bitmxittz/src/leveldb
+    cd Bitmxittz/src/leveldb
 
-chmod 0755 build_detect_platform
+    chmod 0755 build_detect_platform
 
-make clean
+    make clean
 
-make libleveldb.a libmemenv.a
+    make libleveldb.a libmemenv.a
 
-cd
+    cd
 
-cd Bitmxittz/src
+    cd Bitmxittz/src
 
-make -f makefile.unix clean
+    make -f makefile.unix clean
 
-make STATIC=1 -f makefile.unix bitmxittzd  
+    make STATIC=1 -f makefile.unix bitmxittzd  
 
 -or-  
 
-make -f makefile.unix bitmxittzd
+    make -f makefile.unix bitmxittzd
 
-strip bitmxittzd
+    strip bitmxittzd
 
-cp bitmxittzd /usr/bin
+    cp bitmxittzd /usr/bin
 
-bitmxittzd & cd ~/.bitmxittz
+    bitmxittzd & cd ~/.bitmxittz
 
-nano bitmxittz.conf 
+    nano bitmxittz.conf 
 
 or 
 
-vim bitmxittz.conf
+    vim bitmxittz.conf
 
-rpcuser=YOUR_RPC_USERNAME
+    rpcuser=YOUR_RPC_USERNAME
+    rpcpassword=YOUR_STRONG_PASSWORD
+    rpcallowip=127.0.0.1
+    port=14433
+    rpcport=14432
+    daemon=1
+    server=1
+    listen=1
+    testnet=0
+    txindex=1
+    timeout=30000
+    rpctimeout=30000
+    addnode=nd1.bitmxittz.com
+    addnode=nd2.bitmxittz.com
+    addnode=nd3.bitmxittz.com
+    addnode=nd4.bitmxittz.com
+    addnode=nd5.bitmxittz.com
 
-rpcpassword=YOUR_STRONG_PASSWORD
+if using nano cntr+O then cntl+x, if using vim Esc :wq Enter, to save and exit.
 
-rpcallowip=127.0.0.1
+    cd
 
-port=14433
+    bitmxittzd
 
-rpcport=14432
+    bitmxittzd getinfo
 
-daemon=1
-
-server=1
-
-listen=1
-
-testnet=0
-
-txindex=1
-
-timeout=30000
-
-rpctimeout=30000
-
-addnode=nd1.bitmxittz.com
-
-addnode=nd2.bitmxittz.com
-
-addnode=nd3.bitmxittz.com
-
-addnode=nd4.bitmxittz.com
-
-addnode=nd5.bitmxittz.com
-
-if using nano cntr+O then cntl+x, if using vim Esc :wq Enter.
-
-cd
-
-bitmxittzd
-
-bitmxittzd getinfo
-
-bitmxittzd getpeerinfo
+    bitmxittzd getpeerinfo
 
 
 ### Compile QT wallet on Linux
