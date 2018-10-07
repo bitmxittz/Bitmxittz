@@ -79,3 +79,9 @@ Unit tests for the GUI code are in `src/qt/test/`. To compile and run them:
 
 Compilation
 -----------
+
+### Bitmxittz Full Compilation Guide
+
+https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/README.md
+
+
