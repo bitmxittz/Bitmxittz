@@ -82,6 +82,8 @@ Compilation
 
 ### Bitmxittz Full Compilation Guide
 
-https://github.com/bitmxittz/Full-Comiplation-Guide/blob/master/README.md
+To compile Bitmxittz wallet on any server
+
+see https://github.com/bitmxittz/Full-Comiplation-Guide
 
 
